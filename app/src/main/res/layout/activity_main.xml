@@ -19,6 +19,12 @@
         android:hint="description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edittext_priority"
+        android:inputType="text"
+        android:hint="Priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <Button
         android:onClick="addNote"
         android:text="Add"
