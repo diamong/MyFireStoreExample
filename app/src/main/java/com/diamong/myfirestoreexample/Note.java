@@ -1,8 +1,11 @@
 package com.diamong.myfirestoreexample;
 
+import com.google.firebase.firestore.Exclude;
+
 public class Note {
     private String title;
     private String description;
+    private String documentId;
 
     public Note() {
     }
@@ -26,5 +29,14 @@ public class Note {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Exclude
+    public String getDocumentId() {
+        return documentId;
+    }
+
+    public void setDocumentId(String documentId) {
+        this.documentId = documentId;
     }
 }
