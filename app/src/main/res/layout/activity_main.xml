@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="8dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/edittext_title"
+        android:inputType="text"
+        android:hint="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edittext_description"
+        android:inputType="text"
+        android:hint="description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="saveNote"
+        android:text="Save"
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="loadNote"
+        android:text="load"
+        android:id="@+id/button_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="updateDescription"
+        android:text="update description"
+        android:id="@+id/button_update_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="deleteDescription"
+        android:text="delete description"
+        android:id="@+id/button_delete_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="deletenote"
+        android:text="delete note"
+        android:id="@+id/button_delete_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <TextView
+        android:id="@+id/textviw_data"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
